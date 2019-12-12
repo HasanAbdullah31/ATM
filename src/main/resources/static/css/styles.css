@@ -1,14 +1,14 @@
+html, body {
+    text-align: center;
+    zoom: 1.25;
+    -moz-transform: scale(1.25);
+    -moz-transform-origin: 0 0;
+}
 .error {
     color: red;
     font-size: 20px;
 }
 .user {
-    color: blue;
+    color: grey;
     font-size: 15px;
-}
-table {
-    border-collapse: collapse;
-}
-table, th, td {
-    border: 1px solid black;
 }

@@ -3,14 +3,18 @@ package com.ahs.dao;
 import com.ahs.entity.Account;
 import com.ahs.entity.UserInfo;
 
-import java.util.List;
-
 public interface IUserInfoDAO {
     UserInfo getActiveUser(String userName);
 
-    List<Account> getAllBalances();
+    String getFullName();
+
+    Account getAllBalances();
 
     void setChecking(double amt);
 
     void setSaving(double amt);
+
+    void checkingToSaving(double amt);
+
+    void savingToChecking(double amt);
 }

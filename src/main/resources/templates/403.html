@@ -7,7 +7,8 @@
   <body>
     <h3>Access Denied</h3>
     <div>
-      Logged in user: <b class="user" th:inline="text"> [[${#httpServletRequest.remoteUser}]] </b>
+      <!--Logged in user: <b class="user" th:inline="text"> [[${#httpServletRequest.remoteUser}]] </b>-->
+      Logged in user: <b class="user" th:text="${name}"></b>
       <form method="POST" th:action="@{/app-logout}">
         <input type="submit" value="Logout"/>
       </form>
